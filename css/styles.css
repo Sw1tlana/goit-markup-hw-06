@@ -440,6 +440,7 @@ a {
 .container-footer-info {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
     
 }
 
@@ -510,9 +511,7 @@ a {
 
 .form-footer {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 24px;
-    /* gap: 72px; */
 }
 
 .form-footer-input {
