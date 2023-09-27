@@ -115,7 +115,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-iris);
-    margin-right: 76px;
+    /* margin-right: 76px; */
 }
 
 .logo-color {
@@ -440,16 +440,22 @@ a {
 .container-footer-info {
     display: flex;
     align-items: baseline;
-    flex-wrap: wrap;
-    
+
+   flex-wrap: wrap; 
+   gap: 72px;  
 }
 
 .final-logo {
     color: var(--color-cloud);
 }
 
+
 .container-text-logo {
-    margin-right: 120px;
+ text-align: center;
+
+ 
+ 
+    /* margin-right: 120px; */   
 }
 
 .text-final-info {
@@ -459,8 +465,11 @@ a {
 }
 
 .social-media-footer {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-wrap: wrap;
+ 
+    flex-direction: column;  */
+    margin: 0 auto;
 }
 
 .text-media-footer {
@@ -468,10 +477,12 @@ a {
     line-height: 1.5;
     color: var(--color-light);
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .list-social-media {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -499,7 +510,7 @@ a {
 
 
 .form-footer-container {
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .form-footer-text {
@@ -507,10 +518,16 @@ a {
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .form-footer {
     display: flex;
+    /*  */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*  */
     gap: 24px;
 }
 
@@ -552,6 +569,7 @@ a {
     border-radius: 4px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    margin: 0 auto;
 }
 
 .form-footer-icon {
