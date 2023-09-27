@@ -440,9 +440,8 @@ a {
 .container-footer-info {
     display: flex;
     align-items: baseline;
-
-   flex-wrap: wrap; 
-   gap: 72px;  
+    flex-wrap: wrap; 
+    gap: 24px;  
 }
 
 .final-logo {
@@ -452,9 +451,6 @@ a {
 
 .container-text-logo {
  text-align: center;
-
- 
- 
     /* margin-right: 120px; */   
 }
 
@@ -465,11 +461,8 @@ a {
 }
 
 .social-media-footer {
-    /* display: flex;
-    flex-wrap: wrap;
+    margin: 0 auto; 
  
-    flex-direction: column;  */
-    margin: 0 auto;
 }
 
 .text-media-footer {
@@ -804,6 +797,7 @@ a {
     .main-list-advantages {
         gap: 72px 24px;
     }
+
     .main-item-advantages {
         flex-basis: calc((100% - 24px) / 2);
     }
@@ -812,6 +806,7 @@ a {
     .list-social-icon {
        gap: 64px 24px;
     }
+
     .main-item-team {
      flex-basis: calc((100% - 24px) /2);
     }
@@ -820,16 +815,52 @@ a {
     .main-list-portfolio {
         gap: 72px 24px;
     }
+
         .main-item-portfolio {
         flex-basis: calc((100% - 24px) / 2);
         }
+
+
+        /* Footer */
+
+    .final-info {
+        padding: 96px 108px;
+    }
+
+    .container-footer-info {
+        display: flex;
+        gap: 72px 24px;
+    }
+
+    .form-footer-text { 
+       text-align: left;
+    }
+
+    .container-text-logo {
+        text-align: left; 
+   }
+
+   .social-media-footer {
+     /* margin: 0; */
+   }
+
+   .text-media-footer {
+       text-align: left;
+   }
+
 }
+
+
 
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .logo {
+        margin-right: 76px;
     }
 
      /* team */
@@ -840,6 +871,7 @@ a {
             flex-basis: calc((100% - 72px) / 4);
          }
 
+
         /* advantages */
         .main-list-advantages {
         gap: 24px;
@@ -848,15 +880,56 @@ a {
         flex-basis: calc((100% - 72px) / 4);
         }
 
+
        /* portfolio */
+
         .main-list-portfolio {
              gap: 48px 24px;
          }
+
     .main-item-portfolio {
         flex-basis: calc((100% - 48px) /3);
         }
 
+
         /* footer */
-          
-}
+    .container-footer-info {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+
+    .social-media-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-social-media {
+        flex-wrap: nowrap;
+    }
+
+    .text-media-footer {
+        text-align: left;
+    }
+
+    .container-text-logo {
+        margin-right: 120px; 
+    }
+
+    .form-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .form-footer-container {
+        margin-left: 80px; 
+    }
+
+     .form-footer-text {
+         text-align: left;
+     }
+
+ }
+
 
