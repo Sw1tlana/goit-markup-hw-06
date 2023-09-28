@@ -99,6 +99,7 @@ a {
 .container-header {
     display: flex;
     justify-content: space-between;
+    display: none;
 } 
 
 .header-nav-menu {
@@ -170,7 +171,6 @@ a {
 
 .link-info {
     color: var(--color-slate);
-    font-style: normal;
     padding-top: 24px;
     padding-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -179,6 +179,56 @@ a {
 .link-info:hover {
    color: var(--color-ocean);
 } 
+
+/* Menu header mobile*/
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.menu-item{
+    flex-basis: calc((100% - 40px) / 2);
+}
+
+.menu-link {
+    color: var(--color-navyblue);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+}
+
+.link-menu{
+    color: var(--color-ocean);
+}
+
+.info-menu-list {
+ display: flex;
+ flex-direction: column;
+ gap: 24px;
+}
+
+.info-menu-item {
+}
+
+.menu-link-info {
+
+}
+
+.list-social-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.social-menu-item {
+    flex-basis: calc((100% - 120px) / 4);
+}
+
+.
+
+
 
 
 /* -----------Main--------- */
@@ -440,8 +490,8 @@ a {
 .container-footer-info {
     display: flex;
     align-items: baseline;
-    flex-wrap: wrap; 
-    gap: 24px;  
+    flex-wrap: wrap;
+    gap: 24px; 
 }
 
 .final-logo {
@@ -604,9 +654,12 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    min-height: 584px;
-    max-width: 408px;
-    width: 100%;
+
+    min-height: 623px;
+    max-width: 288px;
+    /* min-height: 584px;
+    max-width: 408px; */
+    /* width: 100%; */
     overflow: auto;
     background-color: var(--color-bg-modal);
     border-radius: 4px;
@@ -823,9 +876,9 @@ a {
 
         /* Footer */
 
-    .final-info {
+     .final-info {
         padding: 96px 108px;
-    }
+    } 
 
     .container-footer-info {
         display: flex;
@@ -838,14 +891,22 @@ a {
 
     .container-text-logo {
         text-align: left; 
+        margin-right: 24px;
    }
 
    .social-media-footer {
-     /* margin: 0; */
+     margin: 0;
    }
 
    .text-media-footer {
        text-align: left;
+   }
+
+   /* -----------Modal---------------- */
+
+   .modal {
+    width: 408px;
+    height: 584px;
    }
 
 }
@@ -913,7 +974,7 @@ a {
     }
 
     .container-text-logo {
-        margin-right: 120px; 
+        /* margin-right: 120px;   */
     }
 
     .form-footer {
@@ -930,6 +991,12 @@ a {
          text-align: left;
      }
 
+
+/* --------------------Modal------------------- */
+
+.modal {
+        min-height: 584px;
+        max-width: 408px; 
  }
 
-
+}
