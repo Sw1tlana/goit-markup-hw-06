@@ -103,6 +103,7 @@ a {
 .container-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 } 
 
 .header-nav-menu {
@@ -129,8 +130,8 @@ a {
 
 .header-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .menu-header-btn {
@@ -150,7 +151,8 @@ a {
 
 .header-list-item {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-list-item:not(:last-child) {
@@ -187,6 +189,18 @@ a {
     background-color: var(--color-ocean);
     transform-origin: right;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.header-list-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-item-info {
+    display: flex;
 }
 
 .link-info {
@@ -739,8 +753,8 @@ a {
 
 .modal-input {
     height: 40px;
-    /* width: 100%; */
-    max-width: 256px;
+    /* width: 100%;  */
+    min-width: 256px;
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -941,7 +955,8 @@ a {
    /* ---------------------------------------------------------------- */
 
 @media screen and (max-width: 767.98px) {
-       .header-list {
+       .header-list,
+       .header-list-info {
            display: none;
        }
    }
@@ -955,12 +970,21 @@ a {
     .menu-header-btn {
         display: none;
     }
+ 
+  .header-list-info {
+    gap: 12px;
+    } 
 
+   .header-item-info {
+       margin-left: auto;
+   }
+
+   .link-info {
+    margin: 0;
+    padding: 0;
+   }
 
     /* advantages */
-
-    .advantages-icons-container {
-    }
 
     .main-list-advantages {
         gap: 72px 24px;
@@ -1024,6 +1048,10 @@ a {
     max-height: 584px;
    }
 
+   .modal-input {
+    width: 100%;
+   }
+
 }
 
 
@@ -1040,6 +1068,11 @@ a {
     .logo {
         margin-right: 76px;
     }
+
+        .link-info {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
 
      /* team */
          .list-social-icon {
@@ -1120,7 +1153,11 @@ a {
 .modal {
     min-height: 584px;
     max-width: 408px; 
-    padding: 72px 24px 24px 24px; 
+    padding: 72px 24px 24px 24px;    
+ }
+
+.modal-input {
+    width: 100%;
  }
 
 }
