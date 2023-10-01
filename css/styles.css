@@ -51,7 +51,7 @@ a {
 /* Mobile */
 
 .container {
-    max-width: 320px;
+    width: 320px;
     padding-left: 16px;
     padding-right: 16px;
     margin-right: auto;
@@ -205,6 +205,8 @@ a {
     font-style: normal;
     padding-top: 24px;
     padding-bottom: 24px;
+    font-weight: 500;
+    line-height: 1.5;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -228,8 +230,8 @@ a {
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     margin: 0 auto;
 }
 
@@ -258,14 +260,16 @@ a {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-bg_tab@2x.jpg);
     }
+
 }
 
 /* Desctop screen */
 @media screen and (min-width: 1158px) {
     .hero-section {
-        max-width: 1158px;
+        padding: 188px 0;
+        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero-bg_deck.jpg);
+        url(../images/hero-bg_deck.jpg);
     }
 }
 
@@ -286,15 +290,14 @@ a {
 }
 
 .hero-tittle {
-    text-align: center;
-    font-family: Roboto;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.07; 
     color: var(--color-light);
-    max-width: 496px;
-    margin-bottom: 48px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    max-width: 288px;
+    margin-bottom: 72px;
 }
 
 .button-service {
@@ -339,8 +342,8 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 72px;
-    /* 24px */
 }
+
 
 .main-item-advantages {
     flex-basis: 100%;
@@ -358,6 +361,16 @@ a {
     height: 112px;
 }
 
+.subtittle-advantages {
+    color: var(--color-navyblue);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
 
 /* -----------Section-team------------------- */
 
@@ -370,7 +383,6 @@ a {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* gap: 24px; */
     gap: 72px 24px;
 }
 
@@ -402,7 +414,6 @@ a {
     width: 100%;
     height: auto;
 }
-
 
 .name-profession {
     padding-top: 32px;
@@ -530,7 +541,6 @@ a {
 .logo {
    display: block;
    text-align: center;
-/* margin-right: 120px;    */
 }
 
 .text-final-info {
@@ -582,7 +592,6 @@ a {
 
 .form-footer-container {
     margin: 0 auto;
-     /* margin-left: 80px; */
 }
 
 .form-footer-text {
@@ -685,7 +694,6 @@ a {
     overflow: auto;
     background-color: var(--color-bg-modal);
     border-radius: 4px;
-    /* padding: 72px 24px 24px 24px; */
     padding: 72px 16px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -962,7 +970,7 @@ a {
 
 @media screen and (min-width: 768px) {
     .container {
-       max-width: 768px;
+       width: 768px;
     }
 
     /* Header */
@@ -981,7 +989,21 @@ a {
    .link-info {
         margin: 0;
         padding: 0;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04;
    }
+
+ .hero-tittle {
+        font-size: 56px;
+        font-weight: 700;
+        color: var(--color-light);
+        max-width: 496px;
+        margin-bottom: 36px;
+        line-height: 1.07;
+        margin: 0 auto;
+        
+    } 
 
     /* advantages */
 
@@ -993,13 +1015,21 @@ a {
         flex-basis: calc((100% - 24px) / 2);
     }
 
+    .subtittle-advantages {
+        color: var(--color-navyblue);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: left;
+    }
+
     /* team */
     .list-social-icon {
        gap: 64px 24px;
     }
 
     .main-item-team {
-       flex-basis: calc((100% - 24px) /2);
+      width: 264px;
     }
 
         /* portfolio */
@@ -1014,7 +1044,7 @@ a {
         /* Footer */
 
     .container-footer-info {
-        gap: 72px 24px;
+        width: 594px;
     }
 
      .final-info {
@@ -1067,7 +1097,7 @@ a {
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+        width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1081,9 +1111,18 @@ a {
     .link-info {
         padding-top: 24px;
         padding-bottom: 24px;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.02;
     }
 
-        /* advantages */
+    /* Hero */
+
+    .hero-tittle {
+        margin-bottom: 48px;
+    } 
+
+      /* advantages */
 
     .advantages-icons-container {
         display: flex;
@@ -1140,6 +1179,10 @@ a {
         margin-right: 120px;     
     }
 
+    .logo {
+        text-align: left;
+    }
+
     .form-footer {
         display: flex;
         flex-wrap: nowrap;
@@ -1172,3 +1215,5 @@ a {
  }
 
 }
+
+
