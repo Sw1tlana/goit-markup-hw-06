@@ -83,7 +83,7 @@ a {
 
 .text-main-section {
     color: var(--color-slate);
-    font-family: Roboto;
+    font-weight: 400;
     line-height: 1.5;
     margin-bottom: 0;
 }
@@ -369,6 +369,13 @@ a {
     line-height: 1.11;
     text-transform: capitalize;
     margin-bottom: 8px;
+}
+
+.text-main-advantages {
+    color: var(--color-slate);
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 
 
@@ -1023,6 +1030,11 @@ a {
         text-align: left;
     }
 
+    .text-main-advantages {
+        font-weight: normal;
+    }
+
+
     /* team */
     .list-social-icon {
        gap: 64px 24px;
@@ -1123,6 +1135,10 @@ a {
     } 
 
       /* advantages */
+
+    .text-main-advantages {
+        font-weight: normal;
+    }
 
     .advantages-icons-container {
         display: flex;
